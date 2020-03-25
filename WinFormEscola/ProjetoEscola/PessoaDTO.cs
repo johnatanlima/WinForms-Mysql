@@ -8,14 +8,23 @@ namespace ProjetoEscola
 {
     class PessoaDTO
     {
-        public int Codigo { get; set; }
+        //public int Codigo { get; set; }
 
         public string Nome { get; set; }
 
-        public string Nacionalidade { get; set; }
+        public string Sexo { get; set; }
 
-        public DateTime DataNascimento { get; set; }
+        public string Telefone { get; set; }
 
-        public double Peso { get; set; }
+        public string Rua { get; set; }
+
+        public string Numero { get; set; }
+
+        public string Bairro { get; set; }
+        
+        public string Cidade { get; set; }
+
+        public string Estado { get; set; }
+
     }
 }

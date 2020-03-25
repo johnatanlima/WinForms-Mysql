@@ -15,6 +15,7 @@ namespace ProjetoEscola
         public FormMain()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
