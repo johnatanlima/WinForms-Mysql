@@ -1,0 +1,15 @@
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\ProjetoEscola.exe.config
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\ProjetoEscola.exe
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\ProjetoEscola.pdb
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\MySql.Data.dll
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\Google.Protobuf.dll
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\Renci.SshNet.dll
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\bin\Debug\MySql.Data.xml
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.csprojAssemblyReference.cache
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.FormMain.resources
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.Properties.Resources.resources
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.csproj.GenerateResource.cache
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.csproj.CopyComplete
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.exe
+C:\Users\johw2\Desktop\Appdesk\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.pdb
