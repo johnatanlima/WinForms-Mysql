@@ -18,18 +18,11 @@ namespace ProjetoEscola
             FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void salvar(Pessoa pessoa)
         {
-            PessoasBLL pessoas = new PessoasBLL();
+            PessoaBll pessoaBll = new PessoaBll();
 
-            try
-            {
-                dgPessoas.DataSource = pessoas.ExibirDadosDal();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao exibir dados.. " + ex);
-            }
+            
         }
     }
 }

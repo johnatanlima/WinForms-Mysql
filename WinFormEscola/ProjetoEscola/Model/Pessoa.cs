@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoEscola
 {
-    class PessoaDTO
+    public class Pessoa
     {
         //public int Codigo { get; set; }
 

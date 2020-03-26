@@ -88,6 +88,7 @@
             // 
             // dgPessoas
             // 
+            this.dgPessoas.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgPessoas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgPessoas.Location = new System.Drawing.Point(15, 34);
             this.dgPessoas.Name = "dgPessoas";
@@ -140,7 +141,7 @@
             this.btnBuscar.TabIndex = 17;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+           
             // 
             // btnEditar
             // 
@@ -227,7 +228,7 @@
             this.panelEndereco.Controls.Add(this.lblBairro);
             this.panelEndereco.Location = new System.Drawing.Point(48, 243);
             this.panelEndereco.Name = "panelEndereco";
-            this.panelEndereco.Size = new System.Drawing.Size(466, 206);
+            this.panelEndereco.Size = new System.Drawing.Size(609, 206);
             this.panelEndereco.TabIndex = 26;
             // 
             // cbUf
@@ -318,6 +319,7 @@
             // mkTel
             // 
             this.mkTel.Location = new System.Drawing.Point(50, 150);
+            this.mkTel.Mask = "(00) 00000-0000";
             this.mkTel.Name = "mkTel";
             this.mkTel.Size = new System.Drawing.Size(279, 20);
             this.mkTel.TabIndex = 29;
@@ -337,6 +339,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(691, 745);
             this.Controls.Add(this.lblEnd);
             this.Controls.Add(this.mkTel);
