@@ -40,7 +40,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.lblRua = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
             this.lblNum = new System.Windows.Forms.Label();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.lblBairro = new System.Windows.Forms.Label();
@@ -131,6 +131,7 @@
             this.btnSalvar.TabIndex = 16;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnBuscar
             // 
@@ -141,7 +142,6 @@
             this.btnBuscar.TabIndex = 17;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
-           
             // 
             // btnEditar
             // 
@@ -172,12 +172,12 @@
             this.lblRua.TabIndex = 20;
             this.lblRua.Text = "Rua";
             // 
-            // textBox1
+            // txtRua
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(420, 20);
-            this.textBox1.TabIndex = 21;
+            this.txtRua.Location = new System.Drawing.Point(15, 39);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(420, 20);
+            this.txtRua.TabIndex = 21;
             // 
             // lblNum
             // 
@@ -220,7 +220,7 @@
             this.panelEndereco.Controls.Add(this.lblUf);
             this.panelEndereco.Controls.Add(this.txtCidade);
             this.panelEndereco.Controls.Add(this.lblCidade);
-            this.panelEndereco.Controls.Add(this.textBox1);
+            this.panelEndereco.Controls.Add(this.txtRua);
             this.panelEndereco.Controls.Add(this.lblNum);
             this.panelEndereco.Controls.Add(this.txtNum);
             this.panelEndereco.Controls.Add(this.txtBairro);
@@ -379,7 +379,7 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Label lblRua;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.Label lblNum;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Label lblBairro;

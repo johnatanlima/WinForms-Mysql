@@ -18,11 +18,30 @@ namespace ProjetoEscola
             FormBorderStyle = FormBorderStyle.FixedDialog;
         }
 
-        private void salvar(Pessoa pessoa)
+        private void Salvar(Pessoa pessoa)
         {
             PessoaBll pessoaBll = new PessoaBll();
 
+            pessoa.Nome = txtNome.Text;
+            pessoa.Sexo = cbSexo.Text;
+            pessoa.Telefone = mkTel.Text;
+            pessoa.Rua = txtRua.Text;
+            pessoa.Bairro = txtBairro.Text;
+            pessoa.Numero = txtNum.Text;
+            pessoa.Cidade = txtCidade.Text;
+            pessoa.Estado = cbUf.Text;
+
+            pessoaBll.AdicionarPessoa(pessoa);
+
+            MessageBox.Show("Registrado com Sucesso", "Salvo com sucesso", MessageBoxButtons.OK);
             
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            Pessoa pessoaParametro = new Pessoa();
+
+            Salvar(pessoaParametro);
         }
     }
 }

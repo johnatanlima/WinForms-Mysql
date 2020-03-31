@@ -22,10 +22,7 @@ namespace ProjetoEscola.Dao
 
                 throw ex;
             }
-            finally
-            {
-                myConn.Close();
-            }
+           
         }
 
         public void fecharConexao()
