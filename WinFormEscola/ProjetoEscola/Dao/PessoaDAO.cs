@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,11 +10,12 @@ namespace ProjetoEscola.Dao
 {
     public class PessoaDAO : Conexao
     {
-		//Metodo para salvar no banco
-        public void Salvar(Pessoa pessoaParam)
-        {
-			MySqlCommand cmd = null;
+		MySqlCommand cmd = null; 
 
+		//Metodo para salvar no banco
+		public void Salvar(Pessoa pessoaParam)
+        {
+			
 			try
 			{
 				//Metodo para fazer abertura da conexao
@@ -45,5 +47,34 @@ namespace ProjetoEscola.Dao
 				fecharConexao();
 			}
         }
+
+		public DataTable Buscar()
+		{		
+			try
+			{
+				abrirConexao();
+
+				DataTable dataTable = new DataTable();
+				MySqlDataAdapter dataAdapter = new MySqlDataAdapter();
+
+				cmd = new MySqlCommand("select * from pessoas order by nome;", myConn);
+
+				dataAdapter.SelectCommand = cmd;
+
+				dataAdapter.Fill(dataTable);
+
+				return dataTable;
+
+			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+			finally
+			{
+				fecharConexao();
+			}
+		} 
     }
 }

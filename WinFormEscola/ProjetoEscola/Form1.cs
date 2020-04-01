@@ -16,6 +16,7 @@ namespace ProjetoEscola
         {
             InitializeComponent();
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            BuscarPessoas();
         }
 
         private void Salvar(Pessoa pessoa)
@@ -34,7 +35,16 @@ namespace ProjetoEscola
             pessoaBll.AdicionarPessoa(pessoa);
 
             MessageBox.Show("Registrado com Sucesso", "Salvo com sucesso", MessageBoxButtons.OK);
-            
+
+            BuscarPessoas();
+        }
+
+        //Listar pessoas Cadastradas
+        private void BuscarPessoas()
+        {
+            PessoaBll pessoaParametro = new PessoaBll();
+
+            dgPessoas.DataSource = pessoaParametro.Buscar();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

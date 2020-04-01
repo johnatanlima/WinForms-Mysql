@@ -25,6 +25,23 @@ namespace ProjetoEscola
             }
         }
 
+        public DataTable Buscar()
+        {
+            try
+            {
+                DataTable data = new DataTable();
+
+                data = daoPessoa.Buscar();
+
+                return data;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         //public DataTable ExibirDadosDal()
         //{
         //    try
