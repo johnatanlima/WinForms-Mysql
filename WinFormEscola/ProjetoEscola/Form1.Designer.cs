@@ -97,6 +97,7 @@
             this.dgPessoas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgPessoas.Size = new System.Drawing.Size(453, 209);
             this.dgPessoas.TabIndex = 11;
+            this.dgPessoas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPessoas_CellDoubleClick);
             // 
             // txtCodigo
             // 
@@ -128,6 +129,8 @@
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSalvar.Location = new System.Drawing.Point(482, 204);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(106, 39);
@@ -139,6 +142,7 @@
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.SystemColors.Info;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.Location = new System.Drawing.Point(482, 34);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(106, 39);
@@ -149,6 +153,7 @@
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(482, 92);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(106, 39);
@@ -159,6 +164,7 @@
             // btnDeletar
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeletar.Location = new System.Drawing.Point(482, 148);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(106, 39);
@@ -357,7 +363,7 @@
             this.Controls.Add(this.lblNome);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Software - Escola";
+            this.Text = "Software - Pessoas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgPessoas)).EndInit();
             this.panelEndereco.ResumeLayout(false);

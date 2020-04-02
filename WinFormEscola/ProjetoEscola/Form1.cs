@@ -53,5 +53,19 @@ namespace ProjetoEscola
 
             Salvar(pessoaParametro);
         }
+
+        private void dgPessoas_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtCodigo.Text = dgPessoas.CurrentRow.Cells[0].Value.ToString();
+            txtNome.Text = dgPessoas.CurrentRow.Cells[1].Value.ToString();
+            cbSexo.Text = dgPessoas.CurrentRow.Cells[2].Value.ToString();
+            mkTel.Text = dgPessoas.CurrentRow.Cells[3].Value.ToString();
+            //txtRua.Text = ru, num bairro cida
+            txtRua.Text = dgPessoas.CurrentRow.Cells[4].Value.ToString();
+            txtNum.Text = dgPessoas.CurrentRow.Cells[5].Value.ToString();
+            txtBairro.Text = dgPessoas.CurrentRow.Cells[6].Value.ToString();
+            txtCidade.Text = dgPessoas.CurrentRow.Cells[7].Value.ToString();
+            cbUf.Text = dgPessoas.CurrentRow.Cells[8].Value.ToString();
+        }
     }
 }
