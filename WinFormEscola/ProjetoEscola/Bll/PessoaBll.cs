@@ -25,7 +25,7 @@ namespace ProjetoEscola
             }
         }
 
-        public DataTable Buscar()
+        public DataTable BuscarPessoa()
         {
             try
             {
@@ -42,11 +42,24 @@ namespace ProjetoEscola
             }
         }
 
-        public void Editar(Pessoa pessoaParam)
+        public void EditarPessoa(Pessoa pessoaParam)
         {
             try
             {
-                daoPessoa.EditarPessoa(pessoaParam);
+                daoPessoa.Editar(pessoaParam);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public void ExcluirPessoa(Pessoa pessoaParam)
+        {
+            try
+            {
+                daoPessoa.Excluir(pessoaParam);
             }
             catch (Exception ex)
             {

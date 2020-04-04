@@ -19,6 +19,19 @@ namespace ProjetoEscola
             BuscarPessoas();
         }
 
+        private void LimparCampos()
+        {
+            txtCodigo.Clear();
+            txtNome.Clear();
+            mkTel.Clear();
+            cbSexo.SelectedIndex = -1;
+            txtRua.Clear();
+            txtNum.Clear();
+            txtBairro.Clear();
+            txtCidade.Clear();
+            cbUf.SelectedIndex = -1;
+        }
+
         private void Salvar(Pessoa pessoa)
         {
             PessoaBll pessoaBll = new PessoaBll();
@@ -37,6 +50,7 @@ namespace ProjetoEscola
             MessageBox.Show("Registrado com Sucesso", "Salvo com sucesso", MessageBoxButtons.OK);
 
             BuscarPessoas();
+            LimparCampos();
         }
 
         //Listar pessoas Cadastradas
@@ -44,7 +58,7 @@ namespace ProjetoEscola
         {
             PessoaBll pessoaParametro = new PessoaBll();
 
-            dgPessoas.DataSource = pessoaParametro.Buscar();
+            dgPessoas.DataSource = pessoaParametro.BuscarPessoa();
         }
 
         //Editar pessoa
@@ -62,11 +76,28 @@ namespace ProjetoEscola
             pessoa.Cidade = txtCidade.Text;
             pessoa.Estado = cbUf.Text;
 
-            pessoaBll.Editar(pessoa);
+            pessoaBll.EditarPessoa(pessoa);
 
             MessageBox.Show("Editado com Sucesso", "Editando pessoa", MessageBoxButtons.OK);
 
             BuscarPessoas();
+            LimparCampos();
+
+        }
+
+        //Exclur pessoa
+        private void ExcluirPessoa(Pessoa pessoa)
+        {
+            PessoaBll pessoaBll = new PessoaBll();
+
+            pessoa.Codigo = Convert.ToInt32(txtCodigo.Text);
+
+            pessoaBll.ExcluirPessoa(pessoa);
+
+            MessageBox.Show("Pessoa excluida com Sucesso", "Editando pessoa", MessageBoxButtons.OK);
+
+            BuscarPessoas();
+            LimparCampos();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -96,6 +127,13 @@ namespace ProjetoEscola
 
             EditarPessoa(pessoa); 
 
+        }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            Pessoa pessoa = new Pessoa();
+
+            ExcluirPessoa(pessoa);
         }
     }
 }

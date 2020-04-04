@@ -77,7 +77,7 @@ namespace ProjetoEscola.Dao
 			}
 		}
 		
-		public void EditarPessoa(Pessoa pessoaParam)
+		public void Editar(Pessoa pessoaParam)
 		{
 			try
 			{
@@ -99,6 +99,31 @@ namespace ProjetoEscola.Dao
 				cmd.ExecuteNonQuery();
 
 			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+			finally
+			{
+				fecharConexao();
+			}
+		}
+
+		public void Excluir(Pessoa pessoa)
+		{
+			try
+			{
+				abrirConexao();
+
+				cmd = new MySqlCommand("delete from pessoas where Codigo = @codigo;", myConn);
+
+				cmd.Parameters.AddWithValue("@codigo", pessoa.Codigo);
+
+				cmd.ExecuteNonQuery();
+
+			}
+
 			catch (Exception ex)
 			{
 
