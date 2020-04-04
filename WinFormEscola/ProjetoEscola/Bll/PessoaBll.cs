@@ -42,6 +42,19 @@ namespace ProjetoEscola
             }
         }
 
+        public void Editar(Pessoa pessoaParam)
+        {
+            try
+            {
+                daoPessoa.EditarPessoa(pessoaParam);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         
         //public DataTable ExibirDadosDal()
         //{

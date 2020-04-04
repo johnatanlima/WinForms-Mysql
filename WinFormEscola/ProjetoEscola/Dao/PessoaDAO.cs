@@ -85,7 +85,7 @@ namespace ProjetoEscola.Dao
 
 				cmd = new MySqlCommand("update pessoas set Nome = @nome, Sexo= @sexo, Telefone = @telefone, Rua = @rua, Numero = @numero, Bairro = @bairro, Cidade = @cidade, Estado = @estado where Codigo = @codigo;", myConn);
 				//Passo os valores que vierem do form, para criar a minha instrucao sql, atraves de parametro
-				cmd.Parameters.AddWithValue("@codigo", pessoaParam.)
+				cmd.Parameters.AddWithValue("@codigo", pessoaParam.Codigo);
 				cmd.Parameters.AddWithValue("@nome", pessoaParam.Nome);
 				cmd.Parameters.AddWithValue("@sexo", pessoaParam.Sexo);
 				cmd.Parameters.AddWithValue("@telefone", pessoaParam.Telefone);

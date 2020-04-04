@@ -28,3 +28,4 @@ C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\WinFormEscola\ProjetoEscola\obj\De
 C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.csproj.CopyComplete
 C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.exe
 C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.pdb
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\WinFormEscola\ProjetoEscola\obj\Debug\ProjetoEscola.csproj.CoreCompileInputs.cache

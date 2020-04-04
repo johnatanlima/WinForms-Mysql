@@ -47,6 +47,28 @@ namespace ProjetoEscola
             dgPessoas.DataSource = pessoaParametro.Buscar();
         }
 
+        //Editar pessoa
+        private void EditarPessoa(Pessoa pessoa)
+        {
+            PessoaBll pessoaBll = new PessoaBll();
+
+            pessoa.Codigo = Convert.ToInt32(txtCodigo.Text);
+            pessoa.Nome = txtNome.Text;
+            pessoa.Sexo = cbSexo.Text;
+            pessoa.Telefone = mkTel.Text;
+            pessoa.Rua = txtRua.Text;
+            pessoa.Bairro = txtBairro.Text;
+            pessoa.Numero = txtNum.Text;
+            pessoa.Cidade = txtCidade.Text;
+            pessoa.Estado = cbUf.Text;
+
+            pessoaBll.Editar(pessoa);
+
+            MessageBox.Show("Editado com Sucesso", "Editando pessoa", MessageBoxButtons.OK);
+
+            BuscarPessoas();
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             Pessoa pessoaParametro = new Pessoa();
@@ -66,6 +88,14 @@ namespace ProjetoEscola
             txtBairro.Text = dgPessoas.CurrentRow.Cells[6].Value.ToString();
             txtCidade.Text = dgPessoas.CurrentRow.Cells[7].Value.ToString();
             cbUf.Text = dgPessoas.CurrentRow.Cells[8].Value.ToString();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Pessoa pessoa = new Pessoa();
+
+            EditarPessoa(pessoa); 
+
         }
     }
 }

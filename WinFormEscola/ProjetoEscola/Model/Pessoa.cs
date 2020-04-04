@@ -10,6 +10,8 @@ namespace ProjetoEscola
     {
         //public int Codigo { get; set; }
 
+        public int Codigo { get; set; }
+
         public string Nome { get; set; }
 
         public string Sexo { get; set; }
