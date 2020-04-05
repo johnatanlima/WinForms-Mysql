@@ -47,7 +47,7 @@ namespace ProjetoEscola
 
             pessoaBll.AdicionarPessoa(pessoa);
 
-            MessageBox.Show("Registrado com Sucesso", "Salvo com sucesso", MessageBoxButtons.OK);
+            MessageBox.Show("Registrado com Sucesso", "Alerta", MessageBoxButtons.OK);
 
             BuscarPessoas();
             LimparCampos();
@@ -78,7 +78,7 @@ namespace ProjetoEscola
 
             pessoaBll.EditarPessoa(pessoa);
 
-            MessageBox.Show("Editado com Sucesso", "Editando pessoa", MessageBoxButtons.OK);
+            MessageBox.Show("Editado com Sucesso", "Alerta", MessageBoxButtons.OK);
 
             BuscarPessoas();
             LimparCampos();
@@ -90,14 +90,29 @@ namespace ProjetoEscola
         {
             PessoaBll pessoaBll = new PessoaBll();
 
-            pessoa.Codigo = Convert.ToInt32(txtCodigo.Text);
+            if (txtCodigo.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Selecione a pessoa para ser excluída.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtCodigo.Focus();
 
-            pessoaBll.ExcluirPessoa(pessoa);
+            }
+            else if(MessageBox.Show("Deseja realmente excluir?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
 
-            MessageBox.Show("Pessoa excluida com Sucesso", "Editando pessoa", MessageBoxButtons.OK);
+            }
+            else
+            {
 
-            BuscarPessoas();
-            LimparCampos();
+                    pessoa.Codigo = Convert.ToInt32(txtCodigo.Text);
+
+                    pessoaBll.ExcluirPessoa(pessoa);
+
+                    MessageBox.Show("Pessoa excluida com Sucesso", "Alerta", MessageBoxButtons.OK);
+
+                    BuscarPessoas();
+                    LimparCampos();
+               
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
