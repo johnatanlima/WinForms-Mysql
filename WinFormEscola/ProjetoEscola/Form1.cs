@@ -59,6 +59,9 @@ namespace ProjetoEscola
             PessoaBll pessoaParametro = new PessoaBll();
 
             dgPessoas.DataSource = pessoaParametro.BuscarPessoa();
+
+            //Renomear o cabeçalho do meu Datagrid View
+            dgPessoas.Columns[0].HeaderText = "Cód";
         }
 
         //Editar pessoa
