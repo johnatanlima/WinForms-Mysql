@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.lblSexo = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@
             this.lblTel = new System.Windows.Forms.Label();
             this.mkTel = new System.Windows.Forms.MaskedTextBox();
             this.lblEnd = new System.Windows.Forms.Label();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgPessoas)).BeginInit();
             this.panelEndereco.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -95,8 +97,9 @@
             this.dgPessoas.Location = new System.Drawing.Point(15, 34);
             this.dgPessoas.Name = "dgPessoas";
             this.dgPessoas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgPessoas.Size = new System.Drawing.Size(453, 209);
+            this.dgPessoas.Size = new System.Drawing.Size(491, 209);
             this.dgPessoas.TabIndex = 11;
+            this.toolTip.SetToolTip(this.dgPessoas, "Listagem de pessoas");
             this.dgPessoas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPessoas_CellDoubleClick);
             // 
             // txtCodigo
@@ -106,6 +109,7 @@
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(154, 20);
             this.txtCodigo.TabIndex = 0;
+            this.toolTip.SetToolTip(this.txtCodigo, "Código");
             // 
             // txtNome
             // 
@@ -113,6 +117,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(279, 20);
             this.txtNome.TabIndex = 1;
+            this.toolTip.SetToolTip(this.txtNome, "Nome da pessoa");
             // 
             // cbSexo
             // 
@@ -125,52 +130,61 @@
             this.cbSexo.Name = "cbSexo";
             this.cbSexo.Size = new System.Drawing.Size(159, 21);
             this.cbSexo.TabIndex = 2;
+            this.toolTip.SetToolTip(this.cbSexo, "Sexo");
             // 
             // btnSalvar
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.LightGreen;
+            this.btnSalvar.BackgroundImage = global::ProjetoEscola.Properties.Resources.salvar;
+            this.btnSalvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalvar.Location = new System.Drawing.Point(482, 204);
+            this.btnSalvar.Location = new System.Drawing.Point(527, 204);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(106, 39);
+            this.btnSalvar.Size = new System.Drawing.Size(61, 39);
             this.btnSalvar.TabIndex = 15;
-            this.btnSalvar.Text = "Salvar";
+            this.toolTip.SetToolTip(this.btnSalvar, "Salvar");
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnBuscar
             // 
             this.btnBuscar.BackColor = System.Drawing.SystemColors.Info;
+            this.btnBuscar.BackgroundImage = global::ProjetoEscola.Properties.Resources.buscar;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(482, 34);
+            this.btnBuscar.Location = new System.Drawing.Point(527, 34);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(106, 39);
+            this.btnBuscar.Size = new System.Drawing.Size(61, 39);
             this.btnBuscar.TabIndex = 12;
-            this.btnBuscar.Text = "Buscar";
+            this.toolTip.SetToolTip(this.btnBuscar, "Listar");
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnEditar.BackgroundImage = global::ProjetoEscola.Properties.Resources.editar;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(482, 92);
+            this.btnEditar.Location = new System.Drawing.Point(527, 92);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(106, 39);
+            this.btnEditar.Size = new System.Drawing.Size(61, 39);
             this.btnEditar.TabIndex = 13;
-            this.btnEditar.Text = "Editar";
+            this.toolTip.SetToolTip(this.btnEditar, "Editar");
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnDeletar
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnDeletar.BackgroundImage = global::ProjetoEscola.Properties.Resources.excluir;
+            this.btnDeletar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletar.Location = new System.Drawing.Point(482, 148);
+            this.btnDeletar.Location = new System.Drawing.Point(527, 148);
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(106, 39);
+            this.btnDeletar.Size = new System.Drawing.Size(61, 39);
             this.btnDeletar.TabIndex = 14;
-            this.btnDeletar.Text = "Deletar";
+            this.toolTip.SetToolTip(this.btnDeletar, "Excluir");
             this.btnDeletar.UseVisualStyleBackColor = false;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
@@ -189,6 +203,7 @@
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(420, 20);
             this.txtRua.TabIndex = 5;
+            this.toolTip.SetToolTip(this.txtRua, "Rua");
             // 
             // lblNum
             // 
@@ -205,6 +220,7 @@
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(87, 20);
             this.txtNum.TabIndex = 7;
+            this.toolTip.SetToolTip(this.txtNum, "Nº rua");
             // 
             // lblBairro
             // 
@@ -221,6 +237,7 @@
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(300, 20);
             this.txtBairro.TabIndex = 6;
+            this.toolTip.SetToolTip(this.txtBairro, "Bairro");
             // 
             // panelEndereco
             // 
@@ -278,6 +295,7 @@
             this.cbUf.Name = "cbUf";
             this.cbUf.Size = new System.Drawing.Size(87, 21);
             this.cbUf.TabIndex = 9;
+            this.toolTip.SetToolTip(this.cbUf, "Estado/UF");
             // 
             // lblUf
             // 
@@ -294,6 +312,7 @@
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(300, 20);
             this.txtCidade.TabIndex = 8;
+            this.toolTip.SetToolTip(this.txtCidade, "Cidade");
             // 
             // lblCidade
             // 
@@ -332,8 +351,9 @@
             this.mkTel.Location = new System.Drawing.Point(50, 150);
             this.mkTel.Mask = "(00) 00000-0000";
             this.mkTel.Name = "mkTel";
-            this.mkTel.Size = new System.Drawing.Size(279, 20);
+            this.mkTel.Size = new System.Drawing.Size(90, 20);
             this.mkTel.TabIndex = 3;
+            this.toolTip.SetToolTip(this.mkTel, "Telefone");
             // 
             // lblEnd
             // 
@@ -404,5 +424,6 @@
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.MaskedTextBox mkTel;
         private System.Windows.Forms.Label lblEnd;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }

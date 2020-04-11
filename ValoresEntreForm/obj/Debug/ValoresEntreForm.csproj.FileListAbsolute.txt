@@ -1,0 +1,11 @@
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\bin\Debug\ValoresEntreForm.exe.config
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\bin\Debug\ValoresEntreForm.exe
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\bin\Debug\ValoresEntreForm.pdb
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.csprojAssemblyReference.cache
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.frmOrigem.resources
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.formDestino.resources
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.Properties.Resources.resources
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.csproj.GenerateResource.cache
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.csproj.CoreCompileInputs.cache
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.exe
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.pdb
