@@ -1,6 +1,6 @@
 ﻿namespace ValoresEntreForm
 {
-    partial class formDestino
+    partial class FormDestino
     {
         /// <summary>
         /// Required designer variable.

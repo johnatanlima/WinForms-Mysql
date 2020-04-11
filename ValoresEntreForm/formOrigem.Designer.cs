@@ -114,7 +114,7 @@
             this.btnBuscarOrigem.TabIndex = 2;
             this.btnBuscarOrigem.Text = "Buscar";
             this.btnBuscarOrigem.UseVisualStyleBackColor = true;
-            this.btnBuscarOrigem.Click += new System.EventHandler(this.btnPassar_Click);
+            this.btnBuscarOrigem.Click += new System.EventHandler(this.btnBuscarOrigem_Click);
             // 
             // frmOrigem
             // 

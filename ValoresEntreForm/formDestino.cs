@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ValoresEntreForm
 {
-    public partial class formDestino : Form
+    public partial class FormDestino : Form
     {
-        public formDestino()
+        public FormDestino()
         {
             InitializeComponent();
         }
 
-        public formDestino(string valor1) //Uma maneira de passar o valor
+        public FormDestino(string valor1) //Uma maneira de passar o valor
         {
             InitializeComponent();
             txtDestino1.Text = valor1;

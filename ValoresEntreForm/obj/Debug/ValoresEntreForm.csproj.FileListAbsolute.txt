@@ -9,3 +9,7 @@ C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\Valores
 C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.csproj.CoreCompileInputs.cache
 C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.exe
 C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.pdb
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.formCep.resources
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\bin\Debug\Correios.Net.dll
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\bin\Debug\Correios.Net.pdb
+C:\Users\johw2\Desktop\Appdesk\WinForms-Mysql\ValoresEntreForm\obj\Debug\ValoresEntreForm.csproj.CopyComplete

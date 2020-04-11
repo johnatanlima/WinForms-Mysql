@@ -14,11 +14,18 @@ namespace ValoresEntreForm
         {
             var value = txtOrigem1.Text;
       
-            formDestino form = new formDestino(value);
+            FormDestino form = new FormDestino(value);
 
             form.value2 = txtOrigem2.Text;
             form.Show();
             
+        }
+
+        private void btnBuscarOrigem_Click(object sender, EventArgs e)
+        {
+            formCep formCep = new formCep();
+
+            formCep.Show();
         }
     }
 }

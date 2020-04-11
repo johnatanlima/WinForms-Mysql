@@ -39,8 +39,8 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.txtUF = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.mkTxtCep = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblBuscaCep
@@ -95,6 +95,7 @@
             // 
             // txtLogradouro
             // 
+            this.txtLogradouro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogradouro.Location = new System.Drawing.Point(45, 157);
             this.txtLogradouro.Multiline = true;
             this.txtLogradouro.Name = "txtLogradouro";
@@ -103,6 +104,7 @@
             // 
             // txtBairro
             // 
+            this.txtBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Location = new System.Drawing.Point(45, 224);
             this.txtBairro.Multiline = true;
             this.txtBairro.Name = "txtBairro";
@@ -111,6 +113,7 @@
             // 
             // txtCidade
             // 
+            this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.Location = new System.Drawing.Point(45, 295);
             this.txtCidade.Multiline = true;
             this.txtCidade.Name = "txtCidade";
@@ -129,6 +132,7 @@
             // 
             // txtNumero
             // 
+            this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumero.Location = new System.Drawing.Point(405, 157);
             this.txtNumero.Multiline = true;
             this.txtNumero.Name = "txtNumero";
@@ -137,40 +141,44 @@
             // 
             // txtUF
             // 
+            this.txtUF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUF.Location = new System.Drawing.Point(400, 295);
             this.txtUF.Multiline = true;
             this.txtUF.Name = "txtUF";
             this.txtUF.Size = new System.Drawing.Size(49, 23);
             this.txtUF.TabIndex = 1;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(176, 78);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 23);
-            this.textBox1.TabIndex = 1;
-            // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(362, 76);
+            this.btnBuscar.Location = new System.Drawing.Point(323, 77);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(87, 23);
+            this.btnBuscar.Size = new System.Drawing.Size(52, 23);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // mkTxtCep
+            // 
+            this.mkTxtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkTxtCep.Location = new System.Drawing.Point(176, 77);
+            this.mkTxtCep.Mask = "0000-0000";
+            this.mkTxtCep.Name = "mkTxtCep";
+            this.mkTxtCep.Size = new System.Drawing.Size(130, 22);
+            this.mkTxtCep.TabIndex = 3;
+            this.mkTxtCep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // formCep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 443);
+            this.ClientSize = new System.Drawing.Size(545, 445);
+            this.Controls.Add(this.mkTxtCep);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.txtUF);
             this.Controls.Add(this.txtNumero);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtLogradouro);
             this.Controls.Add(this.lblNumero);
             this.Controls.Add(this.lblUF);
@@ -179,6 +187,7 @@
             this.Controls.Add(this.lblLogradouro);
             this.Controls.Add(this.lblBuscaCep);
             this.Name = "formCep";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar CEP";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -198,7 +207,7 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.TextBox txtUF;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.MaskedTextBox mkTxtCep;
     }
 }
