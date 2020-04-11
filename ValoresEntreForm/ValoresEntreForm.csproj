@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formBuscaCEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBuscaCEP.Designer.cs">
+      <DependentUpon>formBuscaCEP.cs</DependentUpon>
+    </Compile>
     <Compile Include="formOrigem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formBuscaCEP.resx">
+      <DependentUpon>formBuscaCEP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formOrigem.resx">
       <DependentUpon>formOrigem.cs</DependentUpon>
     </EmbeddedResource>

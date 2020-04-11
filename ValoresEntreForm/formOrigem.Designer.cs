@@ -34,13 +34,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblOrigem2 = new System.Windows.Forms.Label();
             this.txtOrigem2 = new System.Windows.Forms.TextBox();
+            this.lblBuscaCep = new System.Windows.Forms.Label();
+            this.btnBuscarOrigem = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDescricao
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(229, 25);
+            this.lblDescricao.Location = new System.Drawing.Point(199, 23);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(206, 20);
             this.lblDescricao.TabIndex = 0;
@@ -57,7 +59,7 @@
             // btnPassar
             // 
             this.btnPassar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPassar.Location = new System.Drawing.Point(517, 139);
+            this.btnPassar.Location = new System.Drawing.Point(489, 134);
             this.btnPassar.Name = "btnPassar";
             this.btnPassar.Size = new System.Drawing.Size(128, 42);
             this.btnPassar.TabIndex = 2;
@@ -79,7 +81,7 @@
             // 
             this.lblOrigem2.AutoSize = true;
             this.lblOrigem2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrigem2.Location = new System.Drawing.Point(34, 165);
+            this.lblOrigem2.Location = new System.Drawing.Point(34, 147);
             this.lblOrigem2.Name = "lblOrigem2";
             this.lblOrigem2.Size = new System.Drawing.Size(135, 16);
             this.lblOrigem2.TabIndex = 3;
@@ -87,22 +89,45 @@
             // 
             // txtOrigem2
             // 
-            this.txtOrigem2.Location = new System.Drawing.Point(37, 184);
+            this.txtOrigem2.Location = new System.Drawing.Point(37, 176);
             this.txtOrigem2.Multiline = true;
             this.txtOrigem2.Name = "txtOrigem2";
             this.txtOrigem2.Size = new System.Drawing.Size(424, 40);
             this.txtOrigem2.TabIndex = 1;
             // 
+            // lblBuscaCep
+            // 
+            this.lblBuscaCep.AutoSize = true;
+            this.lblBuscaCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscaCep.Location = new System.Drawing.Point(33, 268);
+            this.lblBuscaCep.Name = "lblBuscaCep";
+            this.lblBuscaCep.Size = new System.Drawing.Size(254, 20);
+            this.lblBuscaCep.TabIndex = 0;
+            this.lblBuscaCep.Text = "Opção para buscar CEP online";
+            // 
+            // btnBuscarOrigem
+            // 
+            this.btnBuscarOrigem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarOrigem.Location = new System.Drawing.Point(155, 304);
+            this.btnBuscarOrigem.Name = "btnBuscarOrigem";
+            this.btnBuscarOrigem.Size = new System.Drawing.Size(132, 30);
+            this.btnBuscarOrigem.TabIndex = 2;
+            this.btnBuscarOrigem.Text = "Buscar";
+            this.btnBuscarOrigem.UseVisualStyleBackColor = true;
+            this.btnBuscarOrigem.Click += new System.EventHandler(this.btnPassar_Click);
+            // 
             // frmOrigem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 304);
+            this.ClientSize = new System.Drawing.Size(659, 472);
             this.Controls.Add(this.lblOrigem2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnBuscarOrigem);
             this.Controls.Add(this.btnPassar);
             this.Controls.Add(this.txtOrigem2);
             this.Controls.Add(this.txtOrigem1);
+            this.Controls.Add(this.lblBuscaCep);
             this.Controls.Add(this.lblDescricao);
             this.Name = "frmOrigem";
             this.Text = "Origem";
@@ -119,6 +144,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblOrigem2;
         private System.Windows.Forms.TextBox txtOrigem2;
+        private System.Windows.Forms.Label lblBuscaCep;
+        private System.Windows.Forms.Button btnBuscarOrigem;
     }
 }
 
